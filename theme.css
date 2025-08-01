@@ -118,10 +118,14 @@ main {
 }
 
 footer {
-    padding: 25px 0;
     text-align: center;
     opacity: 0.3;
     color: var(--subtext0);
+    padding: 0 !important;
+}
+
+div[eo-block="powered-by"] {
+    display: none !important;
 }
 
 /* ===== CONTENT ELEMENTS ===== */
@@ -436,14 +440,19 @@ ul.blog-posts li a:visited {
     margin: 0;
     border: 0;
     background-color: inherit;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
+    color: black;
+    display: grid;
+    grid-template-areas: "emoji label" "count ...";
     align-items: center;
+    gap: 0 4px;
     position: absolute;
     bottom: 20px;
     right: 20px;
     -webkit-tap-highlight-color: transparent;
+}
+
+.upvote-button:hover {
+    background-color: inherit;
 }
 
 .upvote-button svg {
@@ -452,17 +461,31 @@ ul.blog-posts li a:visited {
 
 .upvote-button::before {
     content: "♡";
+    display: block;
     font-size: 20px;
-    line-height: 1;
-    margin-bottom: 6px;
+    cursor: pointer;
+    margin-bottom: 4px;
 }
 
-.upvote-button.upvoted::before {
-    content: "💜" !important;
+.upvote-button:hover::before {
+    content: "♡";
+    cursor: pointer;
+}
+
+.upvote-button[disabled]::before {
+    content: "💜";
+    cursor: default;
+}
+
+.upvote-button::after {
+    display: none;
+    grid-area: label;
 }
 
 .upvote-count {
-    margin-top: -3px;
+    grid-area: count;
+    margin-top: 0;
+    color: var(--color-text-light);
 }
 
 /* ===== MEDIA QUERIES ===== */
