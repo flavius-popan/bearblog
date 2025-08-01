@@ -459,12 +459,27 @@ ul.blog-posts li a:visited {
     display: none;
 }
 
+@keyframes heart-wobble {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-3deg);
+    }
+    75% {
+        transform: rotate(3deg);
+    }
+}
+
 .upvote-button::before {
     content: "♡";
     display: block;
     font-size: 20px;
     cursor: pointer;
     margin-bottom: 4px;
+    animation: heart-wobble 2s ease-in-out infinite;
+    transform-origin: bottom center;
 }
 
 .upvote-button:hover::before {
@@ -475,6 +490,7 @@ ul.blog-posts li a:visited {
 .upvote-button[disabled]::before {
     content: "💜";
     cursor: default;
+    animation: none;
 }
 
 .upvote-button::after {
