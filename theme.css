@@ -504,6 +504,12 @@ ul.blog-posts li a:visited {
     color: var(--color-text-light);
 }
 
+/* ===== NEWSLETTER FORM OVERRIDES ===== */
+
+.form-container {
+    margin: 0px !important;
+}
+
 /* ===== MEDIA QUERIES ===== */
 
 @media only screen and (max-width: 480px) {
