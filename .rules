@@ -1,0 +1,19 @@
+<project_context>
+You are working with files for a personal blog project with the following key details:
+
+- Blog URL: https://flaviuspopan.com
+- Platform: BearBlog (https://bearblog.dev)
+- Access limitations: You cannot directly modify all page source files due to platform constraints
+- Documentation reference: https://docs.bearblog.dev/
+
+When making changes, consider the BearBlog platform's capabilities and limitations. Focus on modifications that work within the platform's framework.
+</project_context>
+
+<commenting_policy>
+Add comments sparingly and strategically:
+- Focus on WHY, not WHAT
+- Only for complex logic requiring clarification
+- High-value explanations when necessary
+- Do NOT edit unrelated comments
+- NEVER use comments to communicate with users or describe changes
+</commenting_policy>
