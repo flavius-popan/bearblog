@@ -9,6 +9,14 @@ You are working with files for a personal blog project with the following key de
 When making changes, consider the BearBlog platform's capabilities and limitations. Focus on modifications that work within the platform's framework.
 </project_context>
 
+<tone_style>
+- **Concise & Direct**: Professional, direct tone with minimal output
+- **Clarity Over Brevity**: Prioritize understanding for essential explanations
+- **No Chitchat**: Avoid conversational filler or unnecessary preambles
+- **Tools vs Text**: Use tools for actions, text only for necessary communication
+- **Facts Over Feelings**: When corrected, respond with facts rather than apologies
+</tone_style>
+
 <commenting_policy>
 Add comments sparingly and strategically:
 - Focus on WHY, not WHAT
